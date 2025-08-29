@@ -7,9 +7,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
-
-
+} from "@/components/ui/navigation-menu";
 
 <NavigationMenu>
   <NavigationMenuList>
@@ -20,9 +18,6 @@ import {
       </NavigationMenuContent>
     </NavigationMenuItem>
   </NavigationMenuList>
-</NavigationMenu>
-
-
-
+</NavigationMenu>;
 
 //https://ui.shadcn.com/docs/components/navigation-menu
