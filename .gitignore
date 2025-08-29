@@ -1,0 +1,23 @@
+#dependancies
+
+
+
+node_modules/
+npm-debug.log
+
+
+
+.vercel
+
+logs
+*.log
+
+# Local env files
+.env*.local
+.env
+
+*:Zone.Identifier
+
+.next/
+out/
+build/
