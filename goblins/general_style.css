@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: 70px;
+    height: 7vh;
     width: 100%;
     margin: 0;
     background-color: #38405F;
@@ -40,26 +40,37 @@ body {
 /* Chat */
 
 .chat {
-    display: inline-block;
+    display: flex;
     width: 60%;
     border: black 1px solid;
+    /*height: 85vh;*/
+    flex-direction: column;
+    /*
+    justify-content: space-between;
+    overflow: auto;*/
 }
 
 /* Title */
 
-h1 {
+h2 {
     text-align: center;
 }
 
 /* Messages */
 
-#messages {
-    height: 60vh;
+#messages-container {
+    height: 70vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    overflow-y: auto;
-    flex: 1;
+}
+
+#messages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
     
 .message {
