@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EFEFEF;
+}
+
+/* Navigation Bar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    width: 100%;
+    margin: 0;
+    background-color: #38405F;
+}
+
+.link {
+    display: inline-block;
+    color: #EFEFEF;
+    text-decoration: none;
+    padding: 23px 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+/* Chat */
+
+.chat {
+    display: inline-block;
+    width: 60%;
+    border: black 1px solid;
+}
+
+/* Title */
+
+h1 {
+    text-align: center;
+}
+
+/* Messages */
+
+#messages {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: auto;
+    flex: 1;
+}
+    
+.message {
+    display: block;
+    border: black 1px solid;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    max-width: 70%;
+}
+
+.sent {
+    align-self: flex-end;
+    border-radius: 25px 25px 10px 25px;
+}
+
+.recieved {
+    align-self: flex-start;
+    border-radius: 25px 25px 25px 10px;
+}
+
+/* Text Input Box */
+
+#input {
+    width: 100%;
+    display: flex;
+}
+
+#text-input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    resize: none;
+    min-height: 20px;
+    height: 20px;
+    font-size: 100%;
+    max-height: 40px;
+}
