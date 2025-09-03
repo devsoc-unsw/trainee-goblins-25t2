@@ -1,0 +1,30 @@
+/* Navigation Bar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 7vh;
+    width: 100%;
+    margin: 0;
+    background-color: #38405F;
+}
+
+.link {
+    display: inline-block;
+    color: #EFEFEF;
+    text-decoration: none;
+    padding: 23px 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
