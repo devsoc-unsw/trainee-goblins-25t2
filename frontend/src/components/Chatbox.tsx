@@ -36,11 +36,7 @@ export default function Chatbox() {
 
       try {
         // Call backend API
-        const apiUrl =
-          process.env.NODE_ENV === "production"
-            ? process.env.NEXT_PUBLIC_API_URL ||
-              "https://your-backend-url.railway.app/api/chat"
-            : "http://localhost:3001/api/chat";
+        const apiUrl = "/api/chat";
         const response = await fetch(apiUrl, {
           method: "POST",
           headers: {
