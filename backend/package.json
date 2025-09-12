@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "node test-api.js",
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node dist/index.js",
     "build": "tsc",
-    "start:ts": "ts-node index.ts",
-    "dev:ts": "nodemon --exec ts-node index.ts"
+    "dev": "nodemon --exec ts-node index.ts",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",
