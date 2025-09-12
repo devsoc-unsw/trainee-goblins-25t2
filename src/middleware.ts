@@ -1,8 +1,9 @@
-import { type NextRequest } from "next/server";
-import { updateSession } from "@/utils/supabase/middleware";
+import { type NextRequest, NextResponse } from "next/server";
 
 export async function middleware(request: NextRequest) {
-  return await updateSession(request);
+  // Temporarily disabled Supabase middleware to fix deployment
+  // TODO: Add Supabase environment variables to Vercel
+  return NextResponse.next();
 }
 
 export const config = {
