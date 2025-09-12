@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { AIHandler } from "../../../../backend/ai/chatHandler";
+import { AIHandler } from "../../../lib/chatHandler";
 
 // Initialize AI handler (this will be reused across requests)
 let aiHandler: AIHandler;
